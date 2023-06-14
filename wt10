@@ -1,0 +1,38 @@
+
+<?php
+date_default_timezone_set('Asia/Kolkata');
+
+// Set the cookie with the current date-time if it doesn't already exist
+if (!isset($_COOKIE['last_visited'])) {
+    setcookie('last_visited', date('Y-m-d H:i:s'), time() + 86400, '/');
+}
+
+// Retrieve the last visited date-time from the cookie
+$lastVisitedDateTime = $_COOKIE['last_visited'];
+
+// Display the last visited date-time
+if (!empty($lastVisitedDateTime)) {
+    echo "Last visited on: " . $lastVisitedDateTime;
+} else {
+    echo "No previous visits.";
+}
+?>
+
+b.
+<?php
+session_start();
+
+// Check if the page views count is stored in the SESSION
+if (isset($_SESSION['page_views'])) {
+    // Increment the page views count
+    $_SESSION['page_views']++;
+} else {
+    // Initialize the page views count
+    $_SESSION['page_views'] = 1;
+}
+
+// Display the page views count
+echo "<h1>Page Views Count</h1>";
+echo "<p>Total Page Views: " . $_SESSION['page_views'] . "</p>";
+?>
+
