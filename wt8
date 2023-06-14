@@ -1,0 +1,46 @@
+8.
+a.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "Server name is: ";
+echo $_SERVER['PHP_SELF'];
+echo "<br>";
+echo "Server software is: ";
+echo $_SERVER['SERVER_SOFTWARE'];
+echo "<br>";
+echo "Server protocol is: ";
+echo $_SERVER['SERVER_PROTOCOL'];
+echo "<br>";
+echo "Server CGI version is: ";
+echo $_SERVER['GATEWAY_INTERFACE'];
+
+?>
+
+</body>
+</html>
+
+b.
+<?php
+      $n1=(int)readline("Enter first number:");
+      $n2=(int)readline("Enter second number:");
+      $n3=(int)readline("Enter third number:");
+
+      if($n1>$n2 && $n1>$n3){
+        echo $n1;
+        echo " is the largest\n";
+      }
+      else{
+        if($n2>$n1 && $n2>$n3){
+          echo $n2;
+          echo " is the largest\n";
+        }
+        else{
+          echo $n3;
+          echo " is the largest\n";
+      }
+}
+
+?>
