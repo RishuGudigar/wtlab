@@ -1,0 +1,728 @@
+1.
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styling Example</title>
+  <link rel="stylesheet" type="text/css" href="1st.css">
+</head>
+<body>
+  <h1>Styling Example</h1>
+  
+  <h2>Ordered List:</h2>
+  <ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ol>
+  
+  <h2>Table with Borders, Padding, and Color:</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>25</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>30</td>
+      <td>Canada</td>
+    </tr>
+  </table>
+  
+  <h2><span class="highlight">Highlighted Text</span> using the <code>&lt;span&gt;</code> tag:</h2>
+  <p>This is a <span class="highlight">highlighted text</span>.</p>
+</body>
+</html>
+
+
+1.css
+/* styles.css */
+
+body {
+    /* font-family:'Times New Roman'; */
+    background-color: #f5f5f5;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #555;
+  }
+  
+  ol {
+    color: #666;
+    padding-left: 20px;
+  }
+  
+  table {
+    border-collapse:separate;
+    width: 50%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 20px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  .highlight {
+    background-color: yellow;
+  }
+
+
+
+
+
+2.
+<!DOCTYPE html 
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Experiment xhtml</title>
+   <style>
+    body{
+        font-family:'Times New Roman';
+        background-color:beige;
+        margin:40px;
+    }
+    
+    table,th,td{
+        border: 2px solid brown;
+        border-collapse: collapse;
+        width:70%;
+        padding-right:130px;
+    }
+    
+    ul{
+        color:blue;
+        padding-right:150px;
+    }
+    
+    h3{
+        text-align:center;
+    }
+    th{
+        color:red;
+        padding:20px;
+        
+    }
+    
+    td{
+        padding:8px;
+    }
+    .span{
+        color:blueviolet;
+        background-color:bisque;
+        width:100%;
+    }
+
+    .main{
+        background-color: rgb(197, 181, 181);
+        display: flex;
+    }
+    .one{
+        background-color: aqua;
+    }
+    .two{
+        background-color:aquamarine;
+    }
+
+    .three{
+        background-color: bisque;
+    }
+    
+   </style>
+</head>
+<body>
+    <h1>WT lab exam</h1>
+    <div class="main">
+        <div class="one">
+    <h3>Ordered list</h3>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+</div>
+<div class="two">
+    <h3>Table of Cricketers</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Runs</th>
+            <th>Wickets</th>
+            <th>IPL team</th>
+        </tr>
+        <tr>
+            <td>Virat Kohli</td>
+            <td>43</td>
+            <td>15000</td>
+            <td>27</td>
+            <td>RCB</td>
+        </tr>
+
+        <tr>
+            <td>MS Dhoni</td>
+            <td>46</td>
+            <td>7000</td>
+            <td>3</td>
+            <td>CSK</td>
+        </tr>
+
+        <tr>
+            <td>Rohit Sharma</td>
+            <td>43</td>
+            <td>8000</td>
+            <td>10</td>
+            <td>MI</td>
+        </tr>
+        
+        <tr>
+            <td>Hardik Pandya</td>
+            <td>33</td>
+            <td>3000</td>
+            <td>87</td>
+            <td>GT</td>
+        </tr>
+    </table>
+    </div>
+    <div class="three">
+    <h3>Use of <span class="span"> span tag</span></h3>
+    <p>Hellooooooooo <span class="span">Anvitha..(This is highlighted due to use of span tag)</span></p>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+3.
+a.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button onclick="GFN()">Generate Fibinocci numbers</button>
+    <script type="text/javascript">
+        function GFN()
+        {
+            var n=prompt("Enter the limit");
+            n=parseInt(n);
+
+            var arr=[0,1];
+
+            for(var i=2;i<n;i++)
+            {
+                arr[i]=arr[i-1]+arr[i-2];
+            }
+
+            var output="Fibinocci numbers: "+arr.join(", ");
+            document.write(output);
+        }
+    </script>
+</body>
+</html>
+
+3.b.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3b</title>
+</head>
+<body>
+    <button onclick="GNS()">Click here to get the squares of the numbers</button>
+    <script type="text/javascript">
+        function GNS()
+        {
+        var n=prompt("Enter the value for n");
+        n=parseInt(n);
+        
+        var table="<table border 1px><br>";
+        table+="<tr><th>Number</th><th>Square</th></tr>\n";
+        for(i=1;i<=n;i++)
+        {
+            var sq=i*i;
+            table+="<tr><th>"+i+"</th><th>"+sq+"</th></tr>\n";
+        }
+
+        document.write(table);
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+4.
+a.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4a</title>
+</head>
+<body>
+    <h1>Leftmost Vowel Position</h1>
+    <button onclick="LV()">Click here</button>
+
+    <script type="text/javascript">
+        function LVP(s)
+        {
+            var vowels=['a','e','i','o','u'];
+
+            for(var i=0;i<s.length;i++)
+            {
+                var char=s[i].toLowerCase();
+                if(vowels.includes(char))
+                {
+                    return i+1;
+                }
+            }
+                return -1;
+
+        }
+        function LV()
+        {
+            var str=prompt("Enter the string");
+            var pos=LVP(str);
+
+            if(pos!=-1)
+            {
+                alert("The position of the leftmost vowel in the entered string is "+pos);
+            }
+            else{
+                alert("No vowels in the entered string");
+            }
+        }
+    </script>
+</body>
+</html>
+
+4.b.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4b</title>
+</head>
+<body>
+    <h1>Reverse the number</h1>
+    <button onclick="rev()">Click here</button>
+
+    <script type="text/javascript">
+        function revnum(n)
+        {
+            var ret=n.split('').reverse().join('');
+            return ret;
+        }
+        function rev()
+        {
+            var num=prompt("enter the number");
+            var output=revnum(num);
+
+            alert("The reversed number is "+output);
+        }
+    </script>
+</body>
+</html>
+
+
+
+5.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>USN Collection</title>
+  <script type="text/javascript">
+    function validateUSN() {
+      var usnInput = document.getElementById("usn").value;
+      var usnPattern = /^[1-4][A-Z]{2}\d{2}[A-Z]{2}\d{3}$/;
+
+      if (!usnPattern.test(usnInput)) {
+        alert("Invalid USN format! Please enter a valid USN.");
+      } else {
+        alert("USN is valid!");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>USN Collection</h1>
+  <form>
+    <label for="usn">Enter USN:</label>
+    <input type="text" id="usn" name="usn">
+    <br>
+    <button type="button" onclick="validateUSN()">Validate</button>
+  </form>
+</body>
+</html>
+
+
+6.
+<?xml-stylesheet type = "text/css" href = "students.css" ?>
+<students>
+ <VTU>
+ <USN> 1PI06ISIS001 </USN>
+ <name> Amar </name>
+ <college> PESIT </college>
+ <branch> ISE</branch>
+ <YOJ> 2006 </YOJ>
+ <email> amar@gmail.com </email>
+ </VTU>
+ <VTU>
+ <USN> 1PI06ISIS002</USN>
+ <name> asha</name>
+ <college> PESIT </college>
+ <branch> ISE </branch>
+ <YOJ> 2006 </YOJ>
+ <email> asha@PESIT.in </email>
+ </VTU>
+ <VTU>
+ <USN> 1PI06ISIS003 </USN>
+ <name> Bhavya </name>
+ <college> PESIT </college>
+ <branch> ISE </branch>
+ <YOJ> 2006</YOJ>
+ <email> bhavya@yahoo.com </email>
+ </VTU>
+</students>
+
+
+VTU {
+    font-family: "lucida calligraphy", arial, 'sans serif';
+    margin-left: 10pt;
+    background-color: rgb(200, 255, 205);
+}
+
+USN {
+    font-size: 85%;
+    background-color: rgb(100, 255, 105);
+}
+
+name {
+    color: blue;
+    font-size: 39pt;
+    font-style: italic;
+    font-weight: bold;
+}
+
+college {
+    color: pink;
+    font-size: 25pt;
+    font-style: italic;
+    font-weight: bold;
+}
+
+branch {
+    color: red;
+    font-size: 32pt;
+    font-style: italic;
+}
+
+YOJ {
+    padding: 0.5cm;
+}
+
+email {
+    color: green;
+    font-size: 25pt;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+7.
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<VTU>
+    <USN>1PI06ISE</USN>
+    <name>Amar</name>
+    <college>PESIT</college>
+    <branch>ISE</branch>
+    <YOJ>2006</YOJ>
+    <email>amar@gmail.com</email>
+</VTU>
+ <VTU>
+ <USN> 1PI06ISIS002</USN>
+ <name> asha</name>
+ <college> PESIT </college>
+ <branch> ISE </branch>
+ <YOJ> 2006 </YOJ>
+ <email> asha@PESIT.in </email>
+ </VTU>
+ <VTU>
+ <USN> 1PI06ISIS003 </USN>
+ <name> Bhavya </name>
+ <college> PESIT </college>
+ <branch> ISE </branch>
+ <YOJ> 2006</YOJ>
+ <email> bhavya@yahoo.com </email>
+ </VTU>
+
+
+
+<?xml version = "1.0"?>
+<xsl:stylesheet version = "1.0"
+ xmlns:xsl = "http://www.w3.org/1999/XSL/Transform"
+ xmlns = "http://www.w3.org/1999/xhtml">
+<xsl:template match = "VTU">
+<html><head><title> Style sheet for 6b.xml </title>
+ </head><body>
+ <h2> VTU Student Description </h2>
+ <span style = "font-style: italic; color: blue;"> USN:
+ </span>
+ <xsl:value-of select = "USN" /> <br />
+ <span style = "font-style: italic; color: blue;"> Name:
+ </span>
+ <xsl:value-of select = "name" /> <br />
+ <span style = "font-style: italic; color: blue;"> College:
+ </span>
+ <xsl:value-of select = "college" /> <br />
+ <span style = "font-style: italic; color: blue;"> Branch:
+ </span>
+ <xsl:value-of select = "branch" /> <br />
+ <span style = "font-style: italic; color: blue;"> Year of Join:
+ </span>
+ <xsl:value-of select = "YOJ" /> <br />
+ <span style = "font-style: italic; color: blue;"> E-Mail:
+ </span>
+ <xsl:value-of select = "email" /> <br />
+ </body></html>
+</xsl:template>
+</xsl:stylesheet>
+
+
+8.
+a.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "Server name is: ";
+echo $_SERVER['PHP_SELF'];
+echo "<br>";
+echo "Server software is: ";
+echo $_SERVER['SERVER_SOFTWARE'];
+echo "<br>";
+echo "Server protocol is: ";
+echo $_SERVER['SERVER_PROTOCOL'];
+echo "<br>";
+echo "Server CGI version is: ";
+echo $_SERVER['GATEWAY_INTERFACE'];
+
+?>
+
+</body>
+</html>
+
+b.
+<?php
+      $n1=(int)readline("Enter first number:");
+      $n2=(int)readline("Enter second number:");
+      $n3=(int)readline("Enter third number:");
+
+      if($n1>$n2 && $n1>$n3){
+        echo $n1;
+        echo " is the largest\n";
+      }
+      else{
+        if($n2>$n1 && $n2>$n3){
+          echo $n2;
+          echo " is the largest\n";
+        }
+        else{
+          echo $n3;
+          echo " is the largest\n";
+      }
+}
+
+?>
+
+
+
+
+9.
+a.
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   </head>
+   <body>
+   <form method='POST'>
+   <h2>Please input your name:</h2>
+ <input type="text" name="name">
+ <input type="submit" value="Submit Name">
+ </form>
+<?php
+$msg=array("Welcome " ,"have a nice day","hi","how are you");
+
+$n = rand(0,4);
+
+$name = $_POST['name'];
+echo "<h3>  $msg[$n] $name </h3>";
+?>
+</body>
+</html>
+
+b.
+<?php
+echo "<h1>Refresh Page</h1>";
+$file='lab9b.txt';
+$c=file_get_contents($file);
+file_put_contents($file,$c+1);
+echo "Count:$c";
+?>
+
+
+
+10.
+a.
+<?php
+date_default_timezone_set('Asia/Kolkata');
+
+// Set the cookie with the current date-time if it doesn't already exist
+if (!isset($_COOKIE['last_visited'])) {
+    setcookie('last_visited', date('Y-m-d H:i:s'), time() + 86400, '/');
+}
+
+// Retrieve the last visited date-time from the cookie
+$lastVisitedDateTime = $_COOKIE['last_visited'];
+
+// Display the last visited date-time
+if (!empty($lastVisitedDateTime)) {
+    echo "Last visited on: " . $lastVisitedDateTime;
+} else {
+    echo "No previous visits.";
+}
+?>
+
+b.
+<?php
+session_start();
+
+// Check if the page views count is stored in the SESSION
+if (isset($_SESSION['page_views'])) {
+    // Increment the page views count
+    $_SESSION['page_views']++;
+} else {
+    // Initialize the page views count
+    $_SESSION['page_views'] = 1;
+}
+
+// Display the page views count
+echo "<h1>Page Views Count</h1>";
+echo "<p>Total Page Views: " . $_SESSION['page_views'] . "</p>";
+?>
+
+
+11.
+x.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Message</title>
+</head>
+<body>
+    <div style="background-color: aqua;">
+    <form action="welcome.php" method="GET" style="padding: 20px; color: white;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <input type="submit" value="Submit" style="background-color: white; color: blue; padding: 10px; border: none;">
+    </form>
+</div>
+</body>
+</html>
+
+welcome.php
+<?php
+if (isset($_GET['firstName']) && isset($_GET['lastName'])) {
+    $firstName = $_GET['firstName'];
+    $lastName = $_GET['lastName'];
+
+    echo "Welcome, " . $firstName . " " . $lastName . "!";
+} else {
+    echo "Please enter your first name and last name.";
+}
+?>
+
+
+12.
+y.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div style="background-color: aqua;">
+    <form action="register.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="usn">USN:</label>
+        <input type="text" id="usn" name="usn" required><br><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+</body>
+</html>
+
+register.php
+<?php
+if (isset($_POST['name']) && isset($_POST['usn'])) {
+    $name = $_POST['name'];
+    $usn = $_POST['usn'];
+
+    echo "Successfully registered! Name: " . $name . ", USN: " . $usn;
+} else {
+    echo "Please enter your Name and USN.";
+}
+?>
+
+
+
+
+
+
