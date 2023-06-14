@@ -1,0 +1,72 @@
+6.
+<?xml-stylesheet type = "text/css" href = "students.css" ?>
+<students>
+ <VTU>
+ <USN> 1PI06ISIS001 </USN>
+ <name> Amar </name>
+ <college> PESIT </college>
+ <branch> ISE</branch>
+ <YOJ> 2006 </YOJ>
+ <email> amar@gmail.com </email>
+ </VTU>
+ <VTU>
+ <USN> 1PI06ISIS002</USN>
+ <name> asha</name>
+ <college> PESIT </college>
+ <branch> ISE </branch>
+ <YOJ> 2006 </YOJ>
+ <email> asha@PESIT.in </email>
+ </VTU>
+ <VTU>
+ <USN> 1PI06ISIS003 </USN>
+ <name> Bhavya </name>
+ <college> PESIT </college>
+ <branch> ISE </branch>
+ <YOJ> 2006</YOJ>
+ <email> bhavya@yahoo.com </email>
+ </VTU>
+</students>
+
+
+VTU {
+    font-family: "lucida calligraphy", arial, 'sans serif';
+    margin-left: 10pt;
+    background-color: rgb(200, 255, 205);
+}
+
+USN {
+    font-size: 85%;
+    background-color: rgb(100, 255, 105);
+}
+
+name {
+    color: blue;
+    font-size: 39pt;
+    font-style: italic;
+    font-weight: bold;
+}
+
+college {
+    color: pink;
+    font-size: 25pt;
+    font-style: italic;
+    font-weight: bold;
+}
+
+branch {
+    color: red;
+    font-size: 32pt;
+    font-style: italic;
+}
+
+YOJ {
+    padding: 0.5cm;
+}
+
+email {
+    color: green;
+    font-size: 25pt;
+    font-style: italic;
+    font-weight: bold;
+}
+
