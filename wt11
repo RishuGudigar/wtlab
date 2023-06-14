@@ -1,0 +1,34 @@
+x.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Message</title>
+</head>
+<body>
+    <div style="background-color: aqua;">
+    <form action="welcome.php" method="GET" style="padding: 20px; color: white;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <input type="submit" value="Submit" style="background-color: white; color: blue; padding: 10px; border: none;">
+    </form>
+</div>
+</body>
+</html>
+
+welcome.php
+<?php
+if (isset($_GET['firstName']) && isset($_GET['lastName'])) {
+    $firstName = $_GET['firstName'];
+    $lastName = $_GET['lastName'];
+
+    echo "Welcome, " . $firstName . " " . $lastName . "!";
+} else {
+    echo "Please enter your first name and last name.";
+}
+?>
+
+
