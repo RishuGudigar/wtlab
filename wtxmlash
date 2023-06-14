@@ -1,0 +1,56 @@
+[12:43, 14/06/2023] Chitti: <?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+<html>
+<head></head>
+<body>
+<xsl:apply-templates select="students/student"/>
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match="student">
+<div>
+<h2>USN : <xsl:value-of select="usn"/></h2>
+<p>Name : <xsl:value-of select="name"/></p>
+<p>College : <xsl:value-of select="college"/></p>
+<p>Branch : <xsl:value-of select="branch"/></p>
+<p>Year : <xsl:value-of select="year"/></p>
+<p>Email : <xsl:value-of select="email"/></p>
+</div>
+</xsl:template>
+</xsl:stylesheet>
+ <?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+
+	<student>
+		<usn>4NI20IS028</usn>
+		<name>Ashwin</name>
+		<college>NIE</college>
+		<branch>ISE</branch>
+		<year>2024</year>
+		<email>ashwin@nie.ac.in</email>
+	</student>	
+
+	<student>
+		<usn>4NI20CS035</usn>
+		<name>Raju Kulkarni</name>
+		<college>NIE</college>
+		<branch>CSE</branch>
+		<year>2024</year>
+		<email>guru.raju.kulkarni@nie.ac.in</email>
+	</student>	
+
+	<student>
+		<usn>4RV19EC001</usn>
+		<name>Ravi</name>
+		<college>RVCE</college>
+		<branch>ECE</branch>
+		<year>2023</year>
+		<email>ravi@rvce.ac.in</email>
+	</student>	
+
+</students>
