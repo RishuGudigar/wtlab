@@ -1,0 +1,17 @@
+<?php
+
+echo "<h2>Refresh the page</h2>";
+
+$fp=fopen("wt9bcounter.txt","r");
+$count=fread($fp,10);
+fclose($fp);
+
+$count=$count+1;
+
+$fp=fopen("wt9bcounter.txt","w");
+fwrite($fp,$count);
+fclose($fp);
+
+echo "Number of visiters visited this website = $count";
+
+?>
