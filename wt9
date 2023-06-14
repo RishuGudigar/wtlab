@@ -1,0 +1,34 @@
+9.
+a.
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   </head>
+   <body>
+   <form method='POST'>
+   <h2>Please input your name:</h2>
+ <input type="text" name="name">
+ <input type="submit" value="Submit Name">
+ </form>
+<?php
+$msg=array("Welcome " ,"have a nice day","hi","how are you");
+
+$n = rand(0,4);
+
+$name = $_POST['name'];
+echo "<h3>  $msg[$n] $name </h3>";
+?>
+</body>
+</html>
+
+b.
+<?php
+echo "<h1>Refresh Page</h1>";
+$file='lab9b.txt';
+$c=file_get_contents($file);
+file_put_contents($file,$c+1);
+echo "Count:$c";
+?>
+
